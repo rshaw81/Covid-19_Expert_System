@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+        
+        <style>
+          .btn{background-color: #0af1de}
+          .btn:hover {box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+          }
+          .conditions {
+            width: 60%;
+            margin: auto;
+            position: relative;
+            color: white;
+          }
+          h1 {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+            color: white;
+          }
+          body {
+            background-color: black;
+          }
+          
+        </style>
+
+    </head>
+    <body>
+      <h1>
+        Covid-19 Self Diagnosis Checklist
+      </h1>
+        <form class="conditions">
+            <fieldset>
+              <legend>Please check off all symptoms</legend>
+              <div class="fever">
+                <input type="checkbox" id="Fever" name="source" value="Fever">
+                <label for="Fever">Fever</label>
+              </div>
+              <div class="cough">
+                <input type="checkbox" id="Cough" name="source" value="Cough">
+                <label for="Cough">Cough</label>
+              </div>
+              <div class="tiredness">
+                <input type="checkbox" id="tiredness" name="source" value="tiredness">
+                <label for="tiredness">Tiredness</label>
+              </div>
+              <div class="Loss_taste">
+                <input type="checkbox" id="Loss of taste and Smell" name="source" value="Loss of taste and Smell">
+                <label for="Loss of taste and Smell">Loss of taste and Smell</label>
+              </div>
+              <div class="sore_throat">
+                <input type="checkbox" id="Sore Throat" name="source" value="Sore Throat">
+                <label for="Sore Throat">Sore Throat</label>
+              </div>
+              <div class="headache">
+                <input type="checkbox" id="Headache" name="source" value="Headache">
+                <label for="Headache">Headache</label>
+              </div>
+              <div class="aches_pains">
+                <input type="checkbox" id="Aches and Pains" name="source" value="Aches and Pains">
+                <label for="Aches and Pains">Aches and Pains</label>
+              </div>
+              <div class="diarrhea">
+                <input type="checkbox" id="Diarrhea" name="source" value="Diarrhea">
+                <label for="Diarrhea">Diarrhea</label>
+              </div>
+              <div class="chills">
+                <input type="checkbox" id="Chills" name="source" value="Chills">
+                <label for="Chills">Chills</label>
+              </div>
+              <div class="rash">
+                <input type="checkbox" id="A Rash on Skin, or Discolouration of toes" name="source" value="A Rash on Skin, or Discolouration of toe">
+                <label for="A Rash on Skin, or Discolouration of toe">A Rash on Skin, or Discolouration of toe</label>
+              </div>
+              <div class="red_eyes">
+                <input type="checkbox" id="Red or irritated eyes" name="source" value="Red or irritated eyes">
+                <label for="Red or irritated eyes">Red or irritated eyes</label>
+              </div>
+              <div class="difficulty_breathing">
+                <input type="checkbox" id="Difficulty Breathing or decolouration of fingers and toes" name="source" value="Difficulty Breathing or decolouration of fingers and toes">
+                <label for="Difficulty Breathing or decolouration of fingers and toes">Difficulty Breathing or decolouration of fingers and toes</label>
+              </div>
+              <div class="loss_of_speech">
+                <input type="checkbox" id="Loss of Speech" name="source" value="Loss of Speech">
+                <label for="Loss of Speech">Loss of Speech</label>
+              </div>
+              <div class="chest_pain">
+                <input type="checkbox" id="Chest Pain" name="source" value="Chest Pain">
+                <label for="Chest Pain">Chest Pain</label>
+              </div>
+              <div>
+                <button class="btn">Submit Symptoms</button>
+              </div>
+              </fieldset>
+            </form>
+    </body>
+</html>
